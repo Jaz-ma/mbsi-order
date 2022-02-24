@@ -75,7 +75,7 @@ footer{
     position: fixed;
     bottom:0;
     right: 0;
-    margin: 1rem;
+    margin: 0.5rem;
     transition: all 0.7s ease-in-out;
     opacity: 0;
     
