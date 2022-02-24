@@ -1,0 +1,130 @@
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 16.5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(13, 110, 253); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(4, 97, 238); 
+  }
+    
+.mynav a:hover{
+    color: rgb(13, 110, 253) !important;
+}
+
+.active {
+    color: rgb(13, 110, 253) !important;
+}
+
+#home{
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('images/whitebackround.jpg'), center fixed no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 60vh;
+    max-width: 100%;
+    
+}
+#about{
+    background-color: rgb(13, 110, 253);
+    animation: slidein-down 1.5s ease-in-out;
+}
+#services a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+#services a:hover{
+    transform: scale(1.08);
+}
+#action a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.7s ease-in;
+}
+.blueicon{
+    color:  rgb(13, 110, 253);
+}
+.card{
+    transition: transform 0.3s ease-in-out;
+ cursor: pointer; 
+}
+.card:hover{
+    transform: scale(1.08);
+}
+.slide-in-down{
+    animation:  slidein-down 1.5s ease-in-out;
+}
+.slide-in-right{
+    animation: slidein-right 1.5s ease-in-out;
+}
+.slide-in-left{
+    animation: slidein-left 1s ease-in-out;
+}
+
+.fadein{
+    animation: fadein 1.7s ease-in-out;
+}
+
+@keyframes slidein-down{
+    0%{
+        transform: translateY(500px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slidein-right{
+
+    0%{
+        transform: translatex(500px);
+        opacity: 0.5;
+
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slidein-lef{
+
+    0%{
+        transform: translatex(-500px);
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadein{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 776px) {
+    #home{
+        min-height: 90vh;
+    }
+  }
