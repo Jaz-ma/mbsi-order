@@ -117,4 +117,15 @@ function link7(){
     navlinks[4].classList.remove('active');
     navlinks[5].classList.remove('active');
 }
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.Back-to-top');
+    scroll.classList.toggle("active-btn",this.window.scrollY > 750 )
+})
+function scrollToTop(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+       
+    })
+}
 
