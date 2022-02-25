@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(function(entries,observer) {
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
-        entry.target.classList.add('slide-in-right');
+        entry.target.classList.add('slide-in-left');
         observer.unobserve(entry.target);
         //document.querySelector('#services1').classList.add('slide-in-left');
         

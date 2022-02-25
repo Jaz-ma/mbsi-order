@@ -305,8 +305,21 @@ iframe{
     }
 }
 
+@keyframes slidein-right{
 
-@keyframes slidein-lef{
+    0%{
+        transform: translatex(500px);
+        opacity: 0.5;
+
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slidein-left{
 
     0%{
         transform: translatex(-500px);
