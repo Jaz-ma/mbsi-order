@@ -7,6 +7,7 @@ var services5 = document.getElementById('services5')
 var services6 = document.getElementById('services6')
 const cards= document.getElementsByClassName('card')
 const action =document.getElementById('action')
+const pricing =document.getElementsByClassName('prc-single');
 const options = {};
 const observer = new IntersectionObserver(function(entries,observer) {
     // Loop over the entries
@@ -37,23 +38,47 @@ const observer = new IntersectionObserver(function(entries,observer) {
       if (entry2.isIntersecting) {
         // Add the animation class
         entry2.target.classList.add('fadein');
-        entry2.target.classList.add('slide-in-down');
+        entry2.target.classList.add('slide-in-left');
         observer2.unobserve(entry2.target);
         //document.querySelector('#services1').classList.add('slide-in-left');
         
       }
     });
   }, options);
+  Array.prototype.forEach.call(pricing, price => {
+    observer2.observe(price)
+  });
 
   Array.prototype.forEach.call(cards, card => {
     observer2.observe(card)
   });
 
-  
-  
+  const about =document.getElementById('about');
+  const options2 = {
+      root:null,
+      threshold:0,
+      rootMargin: '-35%'
+  };
+const observer3 = new IntersectionObserver(function(entries3,observer3) {
+    // Loop over the entries
+    entries3.forEach(entry3 => {
+      // If the element is visible
+      if (entry3.isIntersecting) {
+        // Add the animation class
+        
+        entry3.target.classList.add('slide-in-down');
+        console.log(entry3.target)
+        observer3.unobserve(entry3.target);
+        //document.querySelector('#services1').classList.add('slide-in-left');
+        
+      }
+    });
+  }, options2);
+  observer3.observe(about);
   
   const navlinks =document.getElementsByClassName('nav-link');
 
+  
 function link1(){
     navlinks[0].classList.add('active');
     navlinks[1].classList.remove('active');

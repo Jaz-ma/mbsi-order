@@ -20,7 +20,9 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(4, 97, 238); 
   }
-    
+i{
+    display: inline-block;
+} 
 .mynav a:hover{
     color: rgb(13, 110, 253) !important;
 }
@@ -33,13 +35,13 @@ body{
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('images/whitebackround.jpg'), center fixed no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    height: 60vh;
+    height: 90vh;
     max-width: 100%;
     
 }
 #about{
     background-color: rgb(13, 110, 253);
-    animation: slidein-down 1.5s ease-in-out;
+    visibility: hidden;
 }
 #services a{
     text-decoration: none;
@@ -96,11 +98,186 @@ footer{
       transform: scale(1.3);
       
     }
+    .testi-wrapper{
+        display: inline-block;
+        color: grey !important;
+        width: 30% !important;
+        
+        padding: 1rem ;
+        
+        
+        
+        text-align: center;
+        margin-left: 35%;
+        min-height: 20vh;
+    }
+
+    .testi-wrapper p{
+        border: rgb(105, 105, 216) 1px solid;
+        border-radius: 20px;
+        padding: 0.5rem;
+        margin-top: 7rem;
+    }
+/* For pricing*/
+    .prc-single {
+        text-align: center;
+        background: #f9f9f9;
+        padding: 50px 0px;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .prc-single:before {
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: -40px;
+        height: 100px;
+        width: 100px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .prc-single:hover:before {
+        left: -35px;
+        top: -35px;
+    }
+    
+    .prc-single h2 {
+        font-size: 29px;
+        letter-spacing: 0;
+        color: #0073d6;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    
+    .prc-single strong {
+        font-size: 37px;
+        letter-spacing: 0;
+        color: #303030;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #f3f0f0;
+    }
+    
+    .prc-single strong sup {
+        font-weight: 400;
+        font-size: 23px;
+    }
+    
+    .prc-single strong sub {
+        font-weight: 400;
+        color: #727272;
+        font-size: 16px;
+    }
+    ul.prc-list { 
+        margin: 0px;
+        padding:0px;
+    }
+    
+    ul.prc-list li {
+        color: #4d557d;
+        letter-spacing: 0;
+        margin: 19px 0px;
+        list-style:none;  
+    }
+    
+    .prc-single a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 0;
+        border: 1px solid #0073d6;
+        padding: 10px 31px;
+        border-radius: 10px;
+        color: #0073d6;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 38px;
+    }
+    
+    .prc-single a:hover, .prc-single a.active {
+        color: #fff!important;
+        background: #0073d6;
+    }
+
+    /* Our Team Section
+--------------------------------*/
+#team {
+    background: #fff;
+    padding: 90px 0 60px;
+  }
+  
+  #team .member {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #team .member .pic {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  #team .member .pic img {
+    max-width: 100%;
+    padding: 20px 20px 0;
+  }
+  
+  #team .member .details {
+    background: #fff;
+    color: #0073d6;
+    padding: 15px 0;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #team .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #393939;
+  }
+  
+  #team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  #team .member .social {
+    margin-top: 5px;
+    padding: 6px;
+    text-align: center;
+  }
+  
+  #team .member .social a {
+    color: #313131;
+    margin: 2px 6px;
+    border: 1px solid #272727;
+    width: 42px;
+    display: inline-block;
+    opacity: .4;
+  }
+  #team .member .social a:hover{
+    color: #081e5b;
+    margin: 2px 6px;
+    border: 1px solid #081e5b;
+    opacity: 1;
+  }
+  #team .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
 
 
 
 .slide-in-down{
     animation:  slidein-down 1.5s ease-in-out;
+    visibility: visible !important;
 }
 .slide-in-right{
     animation: slidein-right 1.5s ease-in-out;
@@ -116,10 +293,12 @@ footer{
 @keyframes slidein-down{
     0%{
         transform: translateY(500px);
+        opacity: 0.3;
     }
 
     100%{
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
@@ -161,5 +340,16 @@ footer{
 @media only screen and (max-width: 776px) {
     #home{
         min-height: 90vh;
+    }
+    .testi-wrapper{
+        width: 80%  !important;
+        margin-left: 10%;
+    }
+  }
+  @media only screen and (max-width: 1066px){
+    .testi-wrapper{
+        width: 60%  !important;
+        margin-left: 20%;
+        
     }
   }
