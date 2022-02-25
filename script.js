@@ -162,4 +162,3 @@ function scrollToTop(){
 }
 
 
-this.cookieService.set('Set-Cookie: flavor=choco; SameSite=None; Secure');
