@@ -305,20 +305,7 @@ iframe{
     }
 }
 
-@keyframes slidein-right{
 
-    0%{
-        transform: translatex(500px);
-        opacity: 0.5;
-
-    }
-
-    100%{
-        transform: translatex(0px);
-        opacity: 1;
-
-    }
-}
 @keyframes slidein-lef{
 
     0%{
