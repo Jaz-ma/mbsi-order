@@ -8,6 +8,7 @@ var services6 = document.getElementById('services6')
 const cards= document.getElementsByClassName('card')
 const action =document.getElementById('action')
 const pricing =document.getElementsByClassName('prc-single');
+const services =document.getElementById('services')
 const options = {};
 const observer = new IntersectionObserver(function(entries,observer) {
     // Loop over the entries
@@ -37,8 +38,8 @@ const observer = new IntersectionObserver(function(entries,observer) {
       // If the element is visible
       if (entry2.isIntersecting) {
         // Add the animation class
-        entry2.target.classList.add('fadein');
-        entry2.target.classList.add('slide-in-left');
+        
+        entry2.target.classList.add('slide-in-down');
         observer2.unobserve(entry2.target);
         //document.querySelector('#services1').classList.add('slide-in-left');
         
@@ -47,7 +48,9 @@ const observer = new IntersectionObserver(function(entries,observer) {
   }, options);
   Array.prototype.forEach.call(pricing, price => {
     observer2.observe(price)
+    
   });
+  observer2.observe(services)
 
   Array.prototype.forEach.call(cards, card => {
     observer2.observe(card)
@@ -75,6 +78,7 @@ const observer3 = new IntersectionObserver(function(entries3,observer3) {
     });
   }, options2);
   observer3.observe(about);
+  
   
   const navlinks =document.getElementsByClassName('nav-link');
 
@@ -153,4 +157,3 @@ function scrollToTop(){
        
     })
 }
-
