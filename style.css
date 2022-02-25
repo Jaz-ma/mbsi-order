@@ -273,7 +273,9 @@ footer{
     margin: 0 2px;
   }
 
-
+.map{
+    width: 100%;
+}
 
 .slide-in-down{
     animation:  slidein-down 1.5s ease-in-out;
