@@ -1,3 +1,4 @@
+// Variable Declaration----------------------
 
 var services1 = document.getElementById('services1')
 var services2 = document.getElementById('services2')
@@ -9,6 +10,8 @@ const cards= document.getElementsByClassName('card')
 const action =document.getElementById('action')
 const pricing =document.getElementsByClassName('prc-single');
 const services =document.getElementById('services')
+
+//Intersection Observer API for animations
 const options = {};
 const observer = new IntersectionObserver(function(entries,observer) {
     // Loop over the entries
@@ -82,7 +85,7 @@ const observer3 = new IntersectionObserver(function(entries3,observer3) {
   
   const navlinks =document.getElementsByClassName('nav-link');
 
-  
+  // Navbar active anchor tag (there must be a better way to do this)
 function link1(){
     navlinks[0].classList.add('active');
     navlinks[1].classList.remove('active');
