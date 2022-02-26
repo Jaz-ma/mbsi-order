@@ -2,6 +2,9 @@ body{
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
+nav{
+    padding: 0 !important;
+}
 ::-webkit-scrollbar {
     width: 16.5px;
   }
@@ -32,17 +35,36 @@ i{
 }
 
 #home{
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('images/whitebackround.jpg'), center fixed no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('images/carbeingwashed.jpeg'), center fixed no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     height: 80vh;
     max-width: 100%;
     
 }
-#about{
-    background-color: rgb(13, 110, 253);
-    visibility: hidden;
+.text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 7rem;
+    margin-left: 2rem;
+    
 }
+#about{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/handwashing.jpg'), center fixed no-repeat;
+    background-size: cover;
+    visibility: hidden;
+    height: 80vh;
+    float: none;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-is{
+   
+    text-align: center;
+}
+
 #services a{
     text-decoration: none;
     color: black;
@@ -206,73 +228,10 @@ footer{
         background: #0073d6;
     }
 
-    /*------------------------------------------------------------
-     Our Team Section
---------------------------------------------------------------------*/
-#team {
-    background: #fff;
-    padding: 90px 0 60px;
-  }
-  
-  #team .member {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #team .member .pic {
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  #team .member .pic img {
-    max-width: 100%;
-    padding: 20px 20px 0;
-  }
-  
-  #team .member .details {
-    background: #fff;
-    color: #0073d6;
-    padding: 15px 0;
-    border-radius: 0 0 3px 3px;
-  }
-  
-  #team .member h4 {
-    font-weight: 700;
-    margin-bottom: 2px;
-    font-size: 18px;
-    color: #393939;
-  }
-  
-  #team .member span {
-    font-style: italic;
-    display: block;
-    font-size: 13px;
-  }
-  
-  #team .member .social {
-    margin-top: 5px;
-    padding: 6px;
-    text-align: center;
-  }
-  
-  #team .member .social a {
-    color: #313131;
-    margin: 2px 6px;
-    border: 1px solid #272727;
-    width: 42px;
-    display: inline-block;
-    opacity: .4;
-  }
-  #team .member .social a:hover{
-    color: #081e5b;
-    margin: 2px 6px;
-    border: 1px solid #081e5b;
-    opacity: 1;
-  }
-  #team .member .social i {
-    font-size: 16px;
-    margin: 0 2px;
-  }
+ .nav-scrolled{
+     background-color: rgb(22, 21, 21) !important;
+     animation: fadein 1.7s ease-in-out;
+ }
 
 iframe{
     width: 100%;
@@ -343,6 +302,20 @@ iframe{
 @media only screen and (max-width: 776px) {
     #home{
         min-height: 90vh;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/Car_Wash.jpg'), center fixed no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    #about{
+      
+      
+    }
+    .text-wrapper{
+       display: flex;
+       align-items: flex-end;
+       justify-content: center;
+       padding-bottom: 3rem;
+       
     }
     .testi-wrapper{
         width: 80%  !important;
