@@ -306,10 +306,7 @@ iframe{
         background-size: cover;
         background-blend-mode: darken;
     }
-    #about{
-      
-      
-    }
+    
     .text-wrapper{
        display: flex;
        align-items: flex-end;
