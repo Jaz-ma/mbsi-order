@@ -38,7 +38,7 @@ i{
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('images/carbeingwashed.jpeg'), center fixed no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    height: 80vh;
+    height: 90vh;
     max-width: 100%;
     
 }
@@ -46,7 +46,7 @@ i{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 7rem;
+    padding-bottom: 22rem;
     margin-left: 2rem;
     
 }
@@ -238,14 +238,14 @@ iframe{
 }
 
 .slide-in-down{
-    animation:  slidein-down 1.5s ease-in-out;
+    animation:  slidein-down 1.75s ease-in-out;
     visibility: visible !important;
 }
 .slide-in-right{
     animation: slidein-right 1.5s ease-in-out;
 }
 .slide-in-left{
-    animation: slidein-left 1s ease-in-out;
+    animation: slidein-left 2s ease-in-out;
 }
 
 .fadein{
@@ -302,7 +302,7 @@ iframe{
 @media only screen and (max-width: 776px) {
     #home{
         min-height: 90vh;
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/Car_Wash.jpg'), center fixed no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('images/Car_Wash.png'), center fixed no-repeat;
         background-size: cover;
         background-blend-mode: darken;
     }
