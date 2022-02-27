@@ -26,6 +26,19 @@ const observer = new IntersectionObserver(function(entries,observer) {
       }
     });
   }, options);
+  const observerright = new IntersectionObserver(function(entriesright,observerright) {
+    // Loop over the entriesright
+    entriesright.forEach(entryright => {
+      // If the element is visible
+      if (entryright.isIntersecting) {
+        // Add the animation class
+        entryright.target.classList.add('slide-in-right');
+        observerright.unobserve(entryright.target);
+        //document.querySelector('#services1').classList.add('slide-in-left');
+        
+      }
+    });
+  }, options);
   observer.observe(services1);
   observer.observe(services4);
   observer.observe(services2);
