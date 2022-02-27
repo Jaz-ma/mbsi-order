@@ -4,7 +4,7 @@ body{
 }
 nav{
     padding: 0 !important;
-    border-bottom: 1px solid red !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4) !important;
 }
 ::-webkit-scrollbar {
     width: 16.5px;
