@@ -42,7 +42,7 @@ i{
     background-size: cover;
     padding: 200px 0 120px 0;
     top:0px;
-    min-height: 70vh;
+    min-height: 75vh;
     
 }
 
@@ -337,8 +337,9 @@ iframe{
     }
 }
 @media only screen and (max-width: 776px) {
-   
-    
+ #home{
+     min-height: 110vh;
+ }
     .text-wrapper{
        display: flex;
        align-items: flex-end;
@@ -363,6 +364,6 @@ iframe{
         
     }
     .hero-content{
-        margin-bottom: 24.5rem;
+        padding-bottom: 25rem;
     }
   }
