@@ -42,14 +42,11 @@ i{
     background-size: cover;
     padding: 200px 0 120px 0;
     top:0px;
-    min-height: 694px;
+    min-height: 70vh;
     
 }
 
-#home .hero-banner {
-    width: 50%;
-    float: right;
-}
+
 #home .hero-content {
   position: absolute;
   bottom: 0;
