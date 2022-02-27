@@ -38,7 +38,7 @@ i{
 #home{
     width: 100%;
     position: relative;
-    background: url('/images/car9.png') center bottom no-repeat;
+    background: url('/images/carbanner.jpg') center center no-repeat;
     background-size: cover;
     padding: 200px 0 120px 0;
     top:0px;
@@ -366,6 +366,6 @@ iframe{
         
     }
     .hero-content{
-        margin-bottom: 19rem;
+        margin-bottom: 24.5rem;
     }
   }
