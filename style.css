@@ -38,7 +38,7 @@ i{
 #home{
     width: 100%;
     position: relative;
-    background: url('carbanner.jpg') center center no-repeat;
+    background: url('carbanner.png') center bottom no-repeat;
     background-size: cover;
     padding: 200px 0 120px 0;
     top:0px;
@@ -64,17 +64,31 @@ i{
   margin-bottom: 30px;
   font-size: 29px;
   text-align: left;
-} 
+  font-weight: 500;
+  font-family: 'Open sans', sans-serif;} 
 #home .hero-content h2 span {
   color: #2e2e2e;
   text-align: right;
-  font-size: 3.5rem;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+@media only screen and (max-width: 776px){
+    #home .hero-content{
+        left: 5%;
+    }
+    #home .hero-content h2{
+       font-size: 20px;
+   }  
+   #home .hero-content h2 span{
+       font-size: 40px;
+   }
 }
 .btn-banner{
     transition:  0.5s ease-in-out;
     padding: 0.5rem 2rem;
+    border-radius: 10px !important;
 }
 .btn-banner:hover{
         border-radius: 20px !important;
@@ -337,9 +351,12 @@ iframe{
     }
 }
 @media only screen and (max-width: 776px) {
+   
  #home{
      min-height: 110vh;
  }
+ 
+
     .text-wrapper{
        display: flex;
        align-items: flex-end;
@@ -364,6 +381,6 @@ iframe{
         
     }
     .hero-content{
-        padding-bottom: 25rem;
+        padding-bottom: 14.5rem;
     }
   }
