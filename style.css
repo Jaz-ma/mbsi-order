@@ -289,19 +289,33 @@ iframe{
 }
 
 .slide-in-down{
+    -webkit-animation:  slidein-down 1.75s ease-in-out;
+    -moz-animation:  slidein-down 1.75s ease-in-out;
+    -o-animation:  slidein-down 1.75s ease-in-out;
     animation:  slidein-down 1.75s ease-in-out;
+    
     visibility: visible !important;
+
 }
 .slide-in-right{
+    -webkit-animation: slidein-right 1.5s ease-in-out;
+    -moz-animation: slidein-right 1.5s ease-in-out;
+    -o-animation: slidein-right 1.5s ease-in-out;
     animation: slidein-right 1.5s ease-in-out;
+
 }
 .slide-in-left{
+    -webkit-animation: slidein-left 2s ease-in-out;
+    -moz-animation: slidein-left 2s ease-in-out;
+    -o-animation: slidein-left 2s ease-in-out;
     animation: slidein-left 2s ease-in-out;
 }
 
 .fadein{
-    animation: fadein 1.7s ease-in-out;
-}
+    -webkit-animation: fadein 1.7s ease-in-out;
+    -moz-animation: fadein 1.7s ease-in-out;
+    -o-animation: fadein 1.7s ease-in-out;
+    animation: fadein 1.7s ease-in-out;}
 
 @keyframes slidein-down{
     0%{
