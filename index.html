@@ -102,7 +102,7 @@
      
      <!-- About SECTION -->
 
-     <section id="about" class="bg-primary py-5" >
+     <!-- <section id="about" class="bg-primary py-5" >
         <div class=" ">
         
               <div class="about-is text-light fw-bold" >
@@ -112,7 +112,7 @@
                 <img style="width: 50%;" src="images/carpng.png" alt="">
               </div>
         </div>
-     </section>
+     </section> -->
 
 
        <!-- Services SECTION -->
@@ -444,18 +444,18 @@
     </div>
     <div class="col-lg-7">
       <div class="container">
-        <form>
+        <form action="https://formsubmit.co/potatoorgy3@gmail.com" method="POST">
           <div class="mb-3">
             <label for="validationCustom01" class="form-label">Full name</label>
-        <input type="text" class="form-control" id="validationCustom01"  required>
+        <input type="text" name = "name" class="form-control" id="validationCustom01"  required>
             
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" >
+            <label for="exampleInputEmail1" class="form-label">Your Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" required >
           </div>
           <div class="mb-3">
-            <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+            <textarea rows="10" name="message" cols="100" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
        </div>
           
           <button type="submit" class="btn btn-primary">Send</button>
