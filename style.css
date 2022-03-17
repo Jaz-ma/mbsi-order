@@ -362,11 +362,6 @@ iframe{
 @keyframes slidein-right{
 
     0%{
-        transform: translatex(-500px);
-        opacity: 0.2;
-
-    }
-    1%{
         transform: translatex(500px);
         opacity: 0.2;
 

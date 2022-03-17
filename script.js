@@ -53,7 +53,7 @@ const observer = new IntersectionObserver(function(entries,observer) {
     observer.observe(price)
     
   });
-  observerright.observe(services)
+  observer.observe(services)
 
   // Array.prototype.forEach.call(cards, card => {
   //   observer2.observe(card)
