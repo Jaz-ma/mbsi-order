@@ -119,7 +119,8 @@ align-items: center;
 #services a{
     text-decoration: none;
     color: black;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    height: 25vh;
 }
 #services a:hover{
     transform: scale(1.08);
@@ -133,7 +134,7 @@ align-items: center;
     color:  rgb(13, 110, 253);
 }
 .card{
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
  cursor: pointer; 
 }
 .card:hover{
@@ -191,6 +192,7 @@ footer{
         padding: 0.5rem;
         margin-top: 7rem;
     }
+    
 /* For pricing*/
     .prc-single {
         text-align: center;
@@ -199,6 +201,9 @@ footer{
         border-radius: 3px;
         position: relative;
         overflow: hidden;
+        margin-bottom: 4rem;
+        transition: all 0.4s ease-in;
+        cursor: pointer;
     }
     
     .prc-single:before {
@@ -217,36 +222,58 @@ footer{
     .prc-single:hover:before {
         left: -35px;
         top: -35px;
+        background: #0e43f1;
+
     }
-    
+    .prc-single:hover {
+        transform: scale(1.06);
+    }
     .prc-single h2 {
-        font-size: 29px;
+        font-size: 35px;
         letter-spacing: 0;
-        color: #0073d6;
+        color: #1b1a1a;
         font-weight: 600;
-        margin-bottom: 50px;
+        margin-bottom: 5px;
+    }
+    .prc-single h3{
+        margin-bottom: 60px;
     }
     
     .prc-single strong {
         font-size: 37px;
         letter-spacing: 0;
-        color: #303030;
+        
         font-weight: 700;
         display: block;
         margin-bottom: 50px;
-        padding-bottom: 50px;
-        border-bottom: 1px solid #f3f0f0;
+        /* border-bottom: 1px solid #f3f0f0; */
     }
     
+    .prc-single strong span {
+        font-weight: 1000;
+        font-size: 32px;
+        color: #e0d0d0;
+        transition: all 0.3s ease 0s;
+
+    }
+    .prc-single:hover strong span{
+        color:#0e43f1 !important;
+    } 
     .prc-single strong sup {
-        font-weight: 400;
-        font-size: 23px;
+        font-weight: 500;
+        font-size: 27px;
+
+        
     }
     
-    .prc-single strong sub {
-        font-weight: 400;
-        color: #727272;
-        font-size: 16px;
+    .prc-single strong div {
+        text-align: center;
+        font-weight: 1200;
+        color: #181616;
+        font-size: 20px;
+        margin-bottom :10px;
+        margin-top :30px;
+
     }
     ul.prc-list { 
         margin: 0px;
@@ -278,6 +305,9 @@ footer{
         color: #fff!important;
         background: #0073d6;
     }
+
+
+    
 
  .nav-scrolled{
      background-color: rgb(22, 21, 21) !important;

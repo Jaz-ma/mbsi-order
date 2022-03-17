@@ -8,7 +8,7 @@ var services5 = document.getElementById('services5')
 var services6 = document.getElementById('services6')
 const cards= document.getElementsByClassName('card')
 
-const pricing =document.getElementsByClassName('prc-single');
+const pricing =document.getElementsByClassName('package');
 const services =document.getElementById('services')
 
 //Intersection Observer API for animations
@@ -39,8 +39,8 @@ const observer = new IntersectionObserver(function(entries,observer) {
       }
     });
   }, options);
-  observer.observe(services1);
-  observer.observe(services4);
+  observerright.observe(services1);
+  observerright.observe(services4);
   observer.observe(services2);
   observer.observe(services3);
   observer.observe(services5);
@@ -63,14 +63,14 @@ const observer = new IntersectionObserver(function(entries,observer) {
     });
   }, options);
   Array.prototype.forEach.call(pricing, price => {
-    observer2.observe(price)
+    observerright.observe(price)
     
   });
-  observer2.observe(services)
+  observerright.observe(services)
 
-  Array.prototype.forEach.call(cards, card => {
-    observer2.observe(card)
-  });
+  // Array.prototype.forEach.call(cards, card => {
+  //   observer2.observe(card)
+  // });
 
   const about =document.getElementById('about');
   const options2 = {
@@ -78,22 +78,7 @@ const observer = new IntersectionObserver(function(entries,observer) {
       threshold:0,
       rootMargin: '-35%'
   };
-const observer3 = new IntersectionObserver(function(entries3,observer3) {
-    // Loop over the entries
-    entries3.forEach(entry3 => {
-      // If the element is visible
-      if (entry3.isIntersecting) {
-        // Add the animation class
-        
-        entry3.target.classList.add('slide-in-down');
-        console.log(entry3.target)
-        observer3.unobserve(entry3.target);
-        //document.querySelector('#services1').classList.add('slide-in-left');
-        
-      }
-    });
-  }, options2);
-  observer3.observe(about);
+
   
   
   
@@ -106,8 +91,8 @@ function link1(){
     navlinks[1].classList.remove('active');
     navlinks[2].classList.remove('active');
     navlinks[3].classList.remove('active');
-    navlinks[4].classList.remove('active');
-    navlinks[5].classList.remove('active');
+    // navlinks[4].classList.remove('active');
+    // navlinks[5].classList.remove('active');
     
 }
 function link2(){
@@ -115,8 +100,8 @@ function link2(){
     navlinks[0].classList.remove('active');
     navlinks[2].classList.remove('active');
     navlinks[3].classList.remove('active');
-    navlinks[4].classList.remove('active');
-    navlinks[5].classList.remove('active');
+    // navlinks[4].classList.remove('active');
+    // navlinks[5].classList.remove('active');
     
 }
 function link3(){
@@ -124,8 +109,8 @@ function link3(){
     navlinks[1].classList.remove('active');
     navlinks[0].classList.remove('active');
     navlinks[3].classList.remove('active');
-    navlinks[4].classList.remove('active');
-    navlinks[5].classList.remove('active');
+    // navlinks[4].classList.remove('active');
+    // navlinks[5].classList.remove('active');
     
 }
 function link4(){
@@ -133,28 +118,28 @@ function link4(){
     navlinks[2].classList.remove('active');
     navlinks[1].classList.remove('active');
     navlinks[0].classList.remove('active');
-    navlinks[4].classList.remove('active');
-    navlinks[5].classList.remove('active');
+    // navlinks[4].classList.remove('active');
+    // navlinks[5].classList.remove('active');
     
 }
-function link5(){
-    navlinks[4].classList.add('active');
-    navlinks[1].classList.remove('active');
-    navlinks[2].classList.remove('active');
-    navlinks[3].classList.remove('active');
-    navlinks[0].classList.remove('active');
-    navlinks[5].classList.remove('active');
+// function link5(){
+//     navlinks[4].classList.add('active');
+//     navlinks[1].classList.remove('active');
+//     navlinks[2].classList.remove('active');
+//     navlinks[3].classList.remove('active');
+//     navlinks[0].classList.remove('active');
+//     navlinks[5].classList.remove('active');
     
-}
-function link6(){
-    navlinks[5].classList.add('active');
-    navlinks[1].classList.remove('active');
-    navlinks[2].classList.remove('active');
-    navlinks[3].classList.remove('active');
-    navlinks[0].classList.remove('active');
-    navlinks[4].classList.remove('active');
+// }
+// function link6(){
+//     navlinks[5].classList.add('active');
+//     navlinks[1].classList.remove('active');
+//     navlinks[2].classList.remove('active');
+//     navlinks[3].classList.remove('active');
+//     navlinks[0].classList.remove('active');
+//     navlinks[4].classList.remove('active');
     
-}
+// }
 
 window.addEventListener('scroll', function(){
     var scroll = document.querySelector('.Back-to-top');
