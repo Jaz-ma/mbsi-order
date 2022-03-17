@@ -39,8 +39,8 @@ const observer = new IntersectionObserver(function(entries,observer) {
       }
     });
   }, options);
-  observerright.observe(services1);
-  observerright.observe(services4);
+  observer.observe(services1);
+  observer.observe(services4);
   observer.observe(services2);
   observer.observe(services3);
   observer.observe(services5);
@@ -48,22 +48,9 @@ const observer = new IntersectionObserver(function(entries,observer) {
 
 
 
-  const observer2 = new IntersectionObserver(function(entries2,observer2) {
-    // Loop over the entries
-    entries2.forEach(entry2 => {
-      // If the element is visible
-      if (entry2.isIntersecting) {
-        // Add the animation class
-        
-        entry2.target.classList.add('slide-in-down');
-        observer2.unobserve(entry2.target);
-        //document.querySelector('#services1').classList.add('slide-in-left');
-        
-      }
-    });
-  }, options);
+
   Array.prototype.forEach.call(pricing, price => {
-    observerright.observe(price)
+    observer.observe(price)
     
   });
   observerright.observe(services)
