@@ -306,9 +306,23 @@ footer{
         background: #0073d6;
     }
 
+    .special-service{
+        background-color: #338bf0;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 1rem;
+    }
 
+.special-service div{
+
+    padding:0.5rem;
+    font-size: 29px;
+    text-align: center;
+}
     
-
+#pricing p{
+    font-size: 24px;
+}
  .nav-scrolled{
      background-color: rgb(22, 21, 21) !important;
      animation: fadein 1.7s ease-in-out;
@@ -392,6 +406,12 @@ iframe{
     }
     100%{
         opacity: 1;
+    }
+}
+@media only screen and (max-width: 500px){
+    .special-service {
+        padding: 1rem 0;
+       border-bottom: 1px solid whitesmoke;
     }
 }
 @media only screen and (max-width: 776px) {
