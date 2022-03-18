@@ -306,19 +306,6 @@ footer{
         background: #0073d6;
     }
 
-    .special-service{
-        background-color: #338bf0;
-        padding: 1rem;
-        border-radius: 20px;
-        margin: 1rem;
-    }
-
-.special-service div{
-
-    padding:0.5rem;
-    font-size: 29px;
-    text-align: center;
-}
     
 #pricing p{
     font-size: 24px;
