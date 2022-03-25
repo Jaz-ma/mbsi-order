@@ -35,18 +35,7 @@ i{
     color: rgb(13, 110, 253) !important;
 }
 
-#navbarSupportedContent{
-    margin-right: 16rem !important;
-}
-@media only screen and (max-width: 1280px){
-    #navbarSupportedContent{
-        margin-right: 7.5rem !important;
-    }
-    #home .hero-content {
-        bottom: 25% !important;
 
-    }
-}
 
 #home{
     width: 100%;
@@ -62,7 +51,7 @@ i{
 
 #home .hero-content {
   position: absolute;
-  bottom: 20%;
+  bottom: 35%;
   top: 0%;
   left: 8%;
   right: 0;
@@ -421,7 +410,9 @@ iframe{
  #home{
      min-height: 110vh;
  }
- 
+ #home .hero-content{
+    top: 0.5% !important;
+}
 
     .text-wrapper{
        display: flex;
@@ -446,9 +437,7 @@ iframe{
         margin-left: 20%;
         
     }
-    #home .hero-content{
-        bottom: -8.5% !important;
-    }
+    
     .hero-content{
         padding-bottom: 14.5rem;
     }
