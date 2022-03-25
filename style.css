@@ -35,7 +35,18 @@ i{
     color: rgb(13, 110, 253) !important;
 }
 
+#navbarSupportedContent{
+    margin-right: 16rem !important;
+}
+@media only screen and (max-width: 1280px){
+    #navbarSupportedContent{
+        margin-right: 7.5rem !important;
+    }
+    #home .hero-content {
+        bottom: 25% !important;
 
+    }
+}
 
 #home{
     width: 100%;
@@ -51,8 +62,8 @@ i{
 
 #home .hero-content {
   position: absolute;
-  bottom: 0;
-  top: 0;
+  bottom: 20%;
+  top: 0%;
   left: 8%;
   right: 0;
   display: flex;
@@ -434,6 +445,9 @@ iframe{
         width: 60%  !important;
         margin-left: 20%;
         
+    }
+    #home .hero-content{
+        bottom: -8.5% !important;
     }
     .hero-content{
         padding-bottom: 14.5rem;
